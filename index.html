@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>StockTracker Support</title>
+<style>
+  :root {
+    --bg-0: #0d0818;
+    --bg-1: #1a1030;
+    --bg-2: #241645;
+    --accent: #8b7cf6;
+    --accent-light: #b9aeff;
+    --green: #4ce28a;
+    --text-0: #f5f3ff;
+    --text-1: #b6aed6;
+    --text-2: #7d76a3;
+    --border: rgba(139, 124, 246, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(160deg, var(--bg-0) 0%, var(--bg-1) 55%, var(--bg-0) 100%);
+    color: var(--text-0);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 64px 20px 80px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .mark {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(160deg, var(--bg-1), var(--bg-0));
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .mark svg { width: 30px; height: 30px; }
+
+  h1 {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+    line-height: 1.15;
+  }
+
+  .sub {
+    color: var(--text-1);
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0 0 44px;
+    max-width: 46ch;
+  }
+
+  .card {
+    background: rgba(139, 124, 246, 0.05);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px 28px 24px;
+    margin-bottom: 20px;
+  }
+
+  .card h2 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-light);
+    margin: 0 0 14px;
+  }
+
+  .card p {
+    color: var(--text-1);
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0 0 18px;
+  }
+
+  .card p:last-of-type { margin-bottom: 0; }
+
+  a.contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-0);
+    background: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+
+  a.contact:hover { background: var(--accent-light); transform: translateY(-1px); }
+
+  .faq-item {
+    padding: 18px 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .faq-item:first-child { border-top: none; padding-top: 4px; }
+
+  .faq-item h3 {
+    font-size: 15px;
+    font-weight: 650;
+    margin: 0 0 6px;
+    color: var(--text-0);
+  }
+
+  .faq-item p {
+    font-size: 14px;
+    color: var(--text-1);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  footer {
+    margin-top: 40px;
+    color: var(--text-2);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  footer a { color: var(--text-2); }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 28px; }
+    .card { padding: 22px 20px 20px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="mark">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M3 16 L8 11 L11.5 14 L21 5" stroke="#8b7cf6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 5 L21 5 L21 11" stroke="#8b7cf6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <h1>StockTracker Support</h1>
+  <p class="sub">Questions, bug reports, or feedback about the app — here's how to reach us.</p>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email us directly and we'll get back to you as soon as we can.</p>
+    <a class="contact" href="mailto:support@homeinventoryhq.com?subject=StockTracker%20Support">
+      support@homeinventoryhq.com
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Common Questions</h2>
+
+    <div class="faq-item">
+      <h3>Why do I need my own Finnhub API key?</h3>
+      <p>StockTracker doesn't run its own servers — your watchlist and price data connect directly from your device to Finnhub's free market data API. A free key takes about 30 seconds to get at finnhub.io, no credit card required.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I import my portfolio?</h3>
+      <p>From the main screen, tap Import and choose a CSV file with Symbol and Quantity columns. StockTracker automatically skips option contracts and rows it can't recognize, and shows a summary of what was imported.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What does the one-time unlock include?</h3>
+      <p>The free version supports up to 3 symbols. A single one-time purchase removes that limit and unlocks CSV import/export — no subscriptions, ever.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>I bought the unlock but it's not showing on a new device.</h3>
+      <p>Open Settings and tap Restore Purchases while signed into the same Apple ID used for the original purchase.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Ricardo Gutierrez &middot; StockTracker
+  </footer>
+
+</main>
+</body>
+</html>
