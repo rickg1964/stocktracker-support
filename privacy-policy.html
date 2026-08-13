@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>StockTracker Privacy Policy</title>
+<style>
+  :root {
+    --bg-0: #0d0818;
+    --bg-1: #1a1030;
+    --accent: #8b7cf6;
+    --accent-light: #b9aeff;
+    --text-0: #f5f3ff;
+    --text-1: #b6aed6;
+    --text-2: #7d76a3;
+    --border: rgba(139, 124, 246, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(160deg, var(--bg-0) 0%, var(--bg-1) 55%, var(--bg-0) 100%);
+    color: var(--text-0);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 64px 20px 80px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .mark {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(160deg, var(--bg-1), var(--bg-0));
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .mark svg { width: 28px; height: 28px; }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+    line-height: 1.15;
+  }
+
+  .updated {
+    color: var(--text-2);
+    font-size: 14px;
+    margin: 0 0 40px;
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-light);
+    margin: 36px 0 12px;
+  }
+
+  p {
+    color: var(--text-1);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 14px;
+  }
+
+  ul {
+    margin: 0 0 14px;
+    padding-left: 20px;
+  }
+
+  li {
+    color: var(--text-1);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+  }
+
+  strong { color: var(--text-0); font-weight: 600; }
+
+  a { color: var(--accent-light); }
+
+  .summary-card {
+    background: rgba(76, 226, 138, 0.06);
+    border: 1px solid rgba(76, 226, 138, 0.25);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin: 0 0 8px;
+  }
+
+  .summary-card p {
+    color: var(--text-0);
+    margin: 0;
+    font-size: 15px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  footer {
+    margin-top: 20px;
+    color: var(--text-2);
+    font-size: 13px;
+  }
+
+  footer a { color: var(--text-2); }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="mark">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M3 16 L8 11 L11.5 14 L21 5" stroke="#8b7cf6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 5 L21 5 L21 11" stroke="#8b7cf6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: August 13, 2026</p>
+
+  <div class="summary-card">
+    <p><strong>The short version:</strong> StockTracker doesn't collect, store, or transmit any of your personal data to us. Your watchlist stays on your device. Nothing is sent to our servers, because StockTracker doesn't have any.</p>
+  </div>
+
+  <h2>What This App Does</h2>
+  <p>StockTracker is a stock watchlist app. You add ticker symbols, and the app displays real-time and after-hours prices by connecting directly from your device to Finnhub, a third-party market data provider, using an API key you provide.</p>
+
+  <h2>What We Collect</h2>
+  <p>Nothing. StockTracker does not operate any servers, does not have user accounts, and does not collect, transmit, or store any personal information, usage data, or analytics about you or your device.</p>
+
+  <h2>What Stays On Your Device</h2>
+  <p>The following information is stored locally on your device only, and is never transmitted to us:</p>
+  <ul>
+    <li>Your watchlist symbols and share quantities</li>
+    <li>Your Finnhub API key(s)</li>
+    <li>Your app preferences (theme, view density, update frequency, and similar settings)</li>
+  </ul>
+  <p>This data is stored using standard on-device storage (SQLite and secure storage) and is deleted automatically if you uninstall the app.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>StockTracker connects directly from your device to the following third-party services. We do not act as an intermediary — your device communicates with these services directly, using your own API key where applicable:</p>
+  <ul>
+    <li><strong>Finnhub</strong> — provides real-time and after-hours stock price data and company news, using the API key you supply. See <a href="https://finnhub.io/terms-of-service" target="_blank" rel="noopener">Finnhub's own privacy policy and terms</a> for how they handle any data associated with your API key.</li>
+    <li><strong>Apple, Inc.</strong> — handles all in-app purchase transactions through StoreKit. We never see or store your payment information; that's governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's own privacy policy</a>.</li>
+  </ul>
+
+  <h2>Data Sharing</h2>
+  <p>We do not sell, rent, or share any data, because we do not collect any in the first place.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>StockTracker is not directed at children and does not knowingly collect any information from anyone, including children, since it does not collect information from any user.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If this policy ever changes — for example, if a future version of the app adds analytics or crash reporting — this page will be updated, and the "Last updated" date above will reflect the change.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy? Reach out at <a href="mailto:support@homeinventoryhq.com">support@homeinventoryhq.com</a>.</p>
+
+  <hr />
+
+  <footer>
+    &copy; 2026 Ricardo Gutierrez &middot; StockTracker
+  </footer>
+
+</main>
+</body>
+</html>
